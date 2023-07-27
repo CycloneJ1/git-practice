@@ -1,0 +1,55 @@
+cd git-practice
+touch data.txt
+code  .
+Name: Ironhacker
+Age: 25
+Favorite Color: Yellow
+git init
+git --version
+ls -a
+# => .        ..       .git     data.txt
+git status
+git add data.txt
+git status
+touch file1.txt file2.txt file3.txt file4.txt file5.txt
+git status
+git add file1.txt file2.txt
+git status
+git add .
+git status
+git reset file5.txt
+git status
+git commit -m "Initial commit - Create files, add data"
+git status
+git log
+git add file5.txt
+git commit -m "Add file5 to repo"
+git log
+git init
+git status
+git add <file-name>
+git add .
+git commit -m"<commit-message>"
+git log
+git remote add origin https://github.com/your-github-username/git-practice.git
+
+# "origin" is a shorthand name for the remote repository where we will push the changes 
+# and where from we will pull the changes when our collaborators make them.
+# "origin" is used instead of the original repository's URL - and thereby makes referencing much easier
+git remote -v
+# to add all the changes that are made in the repo
+git add .
+git commit -m "add a descriptive message"
+git push origin master
+Username: your_username
+Password: your_token
+$ git credential-osxkeychain erase
+git config -l 
+# user.name=your_username
+# user.email=your_email
+git remote add <alias> <github-url>
+git push <alias> <remote-branch-name>
+
+
+
+
